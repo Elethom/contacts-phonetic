@@ -34,12 +34,13 @@
 {
     if ([language hasPrefix:@"ja"]) {
         NSMutableString* phoneticString = [[NSMutableString alloc] init];
+        CFLocaleRef locale = CFLocaleCreate(kCFAllocatorDefault, CFSTR("Japanese"));
         CFStringTokenizerRef tokenizer = CFStringTokenizerCreate(NULL,
                                                                  (CFStringRef)self,
-                                                                 CFRangeMake(0, self.length),
+                                                                 CFRangeMake(0,self.length),
                                                                  kCFStringTokenizerUnitWord,
-                                                                 CFLocaleCreate(kCFAllocatorDefault,
-                                                                                CFSTR("Japanese")));
+                                                                 locale);
+        CFRelease(locale);
         CFStringTokenizerTokenType tokenType = CFStringTokenizerAdvanceToNextToken(tokenizer);
         while(tokenType !=kCFStringTokenizerTokenNone){
             CFOptionFlags attribute = kCFStringTokenizerAttributeLatinTranscription;
