@@ -12,6 +12,14 @@ With [Homebrew](https://github.com/Homebrew/homebrew):
 $ brew install contacts-phonetic
 ```
 
+Compile on your own:
+
+```Shell
+$ git clone https://github.com/Elethom/ContactsUtil-PhoneticName.git
+$ cd ContactsUtil-PhoneticName
+$ make install
+```
+
 ## Usage
 
 ```
