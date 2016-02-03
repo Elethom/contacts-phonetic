@@ -78,29 +78,36 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // Parse arguments
         NSArray *arguments = NSProcessInfo.processInfo.arguments;
+        NSString *shortArguments = [[[arguments filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nonnull evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
+            return [evaluatedObject hasPrefix:@"-"] && ![evaluatedObject hasPrefix:@"--"];
+        }]] componentsJoinedByString:@""] stringByReplacingOccurrencesOfString:@"-" withString:@""];
+        arguments = [arguments filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nonnull evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
+            return [evaluatedObject hasPrefix:@"--"];
+        }]];
+        
         if ([arguments containsObject:@"--version"] ||
-            [arguments containsObject:@"-v"]) {
+            [shortArguments containsString:@"v"]) {
             printf("%s", VERSION_STRING);
             return 0;
         }
         if ([arguments containsObject:@"--help"] ||
-            [arguments containsObject:@"-h"]) {
+            [shortArguments containsString:@"h"]) {
             printf("%s", HELP_STRING);
             return 0;
         }
 
         BOOL ignoreJapanese = ([arguments containsObject:@"--ignore-japanese"] ||
-                               [arguments containsObject:@"-j"]);
+                               [shortArguments containsString:@"j"]);
         BOOL ignoreKorean = ([arguments containsObject:@"--ignore-korean"] ||
-                             [arguments containsObject:@"-k"]);
+                             [shortArguments containsString:@"k"]);
         BOOL ignoreChinese = ([arguments containsObject:@"--ignore-chinese"] ||
-                              [arguments containsObject:@"-c"]);
+                              [shortArguments containsString:@"c"]);
         BOOL keepSpaces = ([arguments containsObject:@"--keep-spaces"] ||
-                           [arguments containsObject:@"-s"]);
+                           [shortArguments containsString:@"s"]);
         BOOL keepCombiningMarks = ([arguments containsObject:@"--keep-marks"] ||
-                                   [arguments containsObject:@"-m"]);
+                                   [shortArguments containsString:@"m"]);
         BOOL ignoreExistingPhonetics = ([arguments containsObject:@"--ignore-existing"] ||
-                                        [arguments containsObject:@"-i"]);
+                                        [shortArguments containsString:@"i"]);
         
         // Init dict
         NSDictionary *multitones = @MULTITONES;
