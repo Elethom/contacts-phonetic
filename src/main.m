@@ -7,6 +7,7 @@
 //
 
 #import <AddressBook/AddressBook.h>
+#import "config.h"
 #import "multitones_dict.h"
 
 @interface NSString (PhoneticAdditions)
@@ -77,6 +78,17 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // Parse arguments
         NSArray *arguments = NSProcessInfo.processInfo.arguments;
+        if ([arguments containsObject:@"--version"] ||
+            [arguments containsObject:@"-v"]) {
+            printf("%s", VERSION_STRING);
+            return 0;
+        }
+        if ([arguments containsObject:@"--help"] ||
+            [arguments containsObject:@"-h"]) {
+            printf("%s", HELP_STRING);
+            return 0;
+        }
+
         BOOL ignoreJapanese = ([arguments containsObject:@"--ignore-japanese"] ||
                                [arguments containsObject:@"-j"]);
         BOOL ignoreKorean = ([arguments containsObject:@"--ignore-korean"] ||
