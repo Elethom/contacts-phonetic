@@ -160,7 +160,7 @@ int main(int argc, const char * argv[]) {
             }
             
             // Select
-            printf("\x1b[36m%s\x1b[0m 1. Japanese (%s); 2. Chinese (%s). Select: ", string.UTF8String, japanesePhoneticString.UTF8String, chinesePhoneticString.UTF8String);
+            printf("\x1b[36m%s\x1b[0m 1. Japanese (%s); 2. Chinese (%s). ", string.UTF8String, japanesePhoneticString.UTF8String, chinesePhoneticString.UTF8String);
             NSUInteger selectedIdx = 0;
             do {
                 printf("Select: ");

@@ -54,17 +54,17 @@ Dieter Rams
 Elethom Alstroemeria
 --------------------
 ことり 椎名
-椎名 1. Japanese (shiina); 2. Chinese (chuí míng). Select: Select: 1
+椎名 1. Japanese (shiina); 2. Chinese (chuí míng). Select: 1
 Kotori Shiina
 --------------------
 直人 深澤
-直人 1. Japanese (naoto); 2. Chinese (zhí rén). Select: Select: 1
-深澤 1. Japanese (fukazawa); 2. Chinese (shēn zé). Select: Select: 1
+直人 1. Japanese (naoto); 2. Chinese (zhí rén). Select: 1
+深澤 1. Japanese (fukazawa); 2. Chinese (shēn zé). Select: 1
 Naoto Fukazawa
 --------------------
 研哉 原
-研哉 1. Japanese (ken'ya); 2. Chinese (yán zāi). Select: Select: 1
-原 1. Japanese (hara); 2. Chinese (yuán). Select: Select: 1
+研哉 1. Japanese (ken'ya); 2. Chinese (yán zāi). Select: 1
+原 1. Japanese (hara); 2. Chinese (yuán). Select: 1
 Ken'ya Hara
 --------------------
 ```
