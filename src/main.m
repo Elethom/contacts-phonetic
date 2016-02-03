@@ -95,7 +95,7 @@ int main(int argc, const char * argv[]) {
             printf("%s", HELP_STRING);
             return 0;
         }
-
+        
         BOOL ignoreJapanese = ([arguments containsObject:@"--ignore-japanese"] ||
                                [shortArguments containsString:@"j"]);
         BOOL ignoreKorean = ([arguments containsObject:@"--ignore-korean"] ||
@@ -150,7 +150,7 @@ int main(int argc, const char * argv[]) {
                 !chinesePhoneticString.length) {
                 return japanesePhoneticString;
             } else if (chinesePhoneticString.length &&
-                !japanesePhoneticString.length) {
+                       !japanesePhoneticString.length) {
                 return chinesePhoneticString;
             } else if ([japanesePhoneticString isEqualToString:chinesePhoneticString]) {
                 return japanesePhoneticString;
