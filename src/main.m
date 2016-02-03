@@ -104,10 +104,10 @@ int main(int argc, const char * argv[]) {
                                                                                                        CFRangeMake(0, string.length)));
             
             // Korean
-            if (ignoreKorean) {
-                return nil;
-            }
             if ([language hasPrefix:@"ko"]) {
+                if (ignoreKorean) {
+                    return nil;
+                }
                 return string.phoneticString;
             }
             
