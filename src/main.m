@@ -154,7 +154,8 @@ int main(int argc, const char * argv[]) {
                 return chinesePhoneticString;
             } else if ([japanesePhoneticString isEqualToString:chinesePhoneticString]) {
                 return japanesePhoneticString;
-            } else if (!japanesePhoneticString && !chinesePhoneticString) {
+            } else if (!japanesePhoneticString.length &&
+                       !chinesePhoneticString.length) {
                 return nil;
             }
             
