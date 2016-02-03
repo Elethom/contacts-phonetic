@@ -1,4 +1,4 @@
-#define VERSION_STRING "contacts-phonetic version 0.1.1 Copyright (c) 2016 Elethom Hunter\n"
+#define VERSION_STRING "contacts-phonetic version 0.2 Copyright (c) 2016 Elethom Hunter\n"
 #define HELP_STRING VERSION_STRING "\
 \n\
 Usage: contacts-phonetic [arguments]\n\
