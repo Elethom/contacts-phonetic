@@ -23,23 +23,32 @@ $ make install
 ## Usage
 
 ```
--i, --ignore-existing
-    Ignore existing phonetic names. Use of this option will update all person entries in the address book.
+Usage: contacts-phonetic [arguments]
 
--m, --keep-marks
-    Keep accents and diacritcs.
-
--s, --keep-spaces
-    Keep spaces between characters.
-
--c, --ignore-chinese
-    Ignore Chinese. (Will use Japanese Romaji if both are possible.)
-
--j, --ignore-japanese
-    Ignore Japanese. (Will use Chinese Pinyin if both are possible.)
-
--k, --ignore-korean
-    Ignore Korean.
+Arguments:
+    -v, --version
+    Display current version.
+    
+    -h, --help
+    Display this help text.
+    
+    -i, --ignore-existing
+        Ignore existing phonetic names. Use of this option will update all person entries in the address book.
+    
+    -m, --keep-marks
+        Keep accents and diacritcs.
+    
+    -s, --keep-spaces
+        Keep spaces between characters.
+    
+    -c, --ignore-chinese
+        Ignore Chinese. (Will use Japanese Romaji if both are possible.)
+    
+    -j, --ignore-japanese
+        Ignore Japanese. (Will use Chinese Pinyin if both are possible.)
+    
+    -k, --ignore-korean
+        Ignore Korean.
 ```
 
 Example:
