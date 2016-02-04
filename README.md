@@ -54,7 +54,7 @@ Arguments:
 
 Example:
 
-```Shell
+```
 $ contacts-phonetic
 --------------------
 Alice Alstroemeria
