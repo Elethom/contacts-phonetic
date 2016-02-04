@@ -1,4 +1,4 @@
-# ContactsUtil-PhoneticName
+# contacts-phonetic
 
 ## General
 
@@ -16,8 +16,8 @@ $ brew install elethom/osxutils/contacts-phonetic
 Compile on your own:
 
 ```Shell
-$ git clone https://github.com/Elethom/ContactsUtil-PhoneticName.git
-$ cd ContactsUtil-PhoneticName
+$ git clone https://github.com/Elethom/contacts-phonetic.git
+$ cd contacts-phonetic
 $ make install
 ```
 
