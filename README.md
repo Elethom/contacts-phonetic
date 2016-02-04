@@ -9,7 +9,8 @@ Add phonetic names to contacts. Supports all CJK characters and multiple formats
 With [Homebrew](https://github.com/Homebrew/homebrew):
 
 ```Shell
-$ brew install contacts-phonetic
+$ brew tap elethom/osxutils
+$ brew install elethom/osxutils/contacts-phonetic
 ```
 
 Compile on your own:
