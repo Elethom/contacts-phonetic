@@ -28,10 +28,10 @@ Usage: contacts-phonetic [arguments]
 
 Arguments:
     -v, --version
-    Display current version.
+        Display current version.
     
     -h, --help
-    Display this help text.
+        Display this help text.
     
     -i, --ignore-existing
         Ignore existing phonetic names. Use of this option will update all person entries in the address book.
