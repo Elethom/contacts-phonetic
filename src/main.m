@@ -106,7 +106,8 @@ int main(int argc, const char * argv[]) {
                            [shortArguments containsString:@"s"]);
         BOOL keepCombiningMarks = ([arguments containsObject:@"--keep-marks"] ||
                                    [shortArguments containsString:@"m"]);
-        BOOL ignoreExistingPhonetics = ([arguments containsObject:@"--ignore-existing"] ||
+        BOOL ignoreExistingPhonetics = ([arguments containsObject:@"--overwrite-existing"] ||
+                                        [arguments containsObject:@"--ignore-existing"] ||
                                         [shortArguments containsString:@"i"]);
         
         // Init dict

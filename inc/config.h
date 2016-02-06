@@ -10,8 +10,11 @@ Arguments:\n\
     -h, --help\n\
         Display this help text.\n\
     \n\
-    -i, --ignore-existing\n\
-        Ignore existing phonetic names. Use of this option will update all person entries in the address book.\n\
+    -i, --overwrite-existing\n\
+        Overwrite existing phonetic names.\n\
+    \n\
+    --ignore-existing\n\
+        Deprecated. Same as --overwrite-existing.\n\
      \n\
     -m, --keep-marks\n\
         Keep accents and diacritcs.\n\
