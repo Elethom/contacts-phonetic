@@ -1,5 +1,12 @@
 # contacts-phonetic
 
+[![Release](https://img.shields.io/github/release/Elethom/contacts-phonetic.svg)](../../releases/latest)
+[![Language](https://img.shields.io/badge/language-Objective--C-blue.svg)](../../search)
+[![License](https://img.shields.io/github/license/elethom/contacts-phonetic.svg)](/LICENSE)
+
+[![Tweet](https://img.shields.io/twitter/url/http/ElethomHunter.svg?style=social)](https://twitter.com/intent/tweet?text=contacts-phonetic%3A%20Add%20phonetic%20names%20to%20contacts.&url=https%3A%2F%2Fgithub.com%2FElethom%2Fcontacts-phonetic&via=ElethomHunter)
+[![Twitter](https://img.shields.io/twitter/follow/ElethomHunter.svg?style=social)](https://twitter.com/intent/follow?user_id=1512633926)
+
 Add phonetic names to contacts. Supports all CJK characters and multiple formats.
 
 ## Install
