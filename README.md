@@ -1,7 +1,5 @@
 # contacts-phonetic
 
-## General
-
 Add phonetic names to contacts. Supports all CJK characters and multiple formats.
 
 ## Install
